@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#left{
+    height: 100%;
+    width: 60%;
+    background-color: #fbc50b;
+}
+
+#right{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    left: 60%;
+    top: 0%;
+    background-color: #fbe8b5;
+}
+
+.nav{
+    width: 95%;
+    height: 20%;
+}
+#left img{
+    width: 170px;
+    margin: 20px 30px;
+}
+
+#right img{
+    width: 30px;
+    margin-top: 42px;
+    margin-left: 90%;
+}
+
+#pika{
+    position: absolute;
+    z-index: 9;
+    left: 45%;
+    top: 20%;
+    width: 480px;
+}
+
+#textbox{
+    width: 530px;
+    height: 310px;
+    margin-top: 8%;
+    margin-left: 7%;
+}
+
+#top-text h2{
+    text-transform: uppercase;
+    padding: 5px;
+    letter-spacing: 7px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#mid-text h1{
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+#bottom-text{
+    width: 85%;
+}
+
+#bottom-text h4{
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding-left: 5px;
+}
+
+#text-box2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    padding-left: 5px;
+    letter-spacing: 4px;
+}
+
+#logo img{
+    width: 200px;
+    position: absolute;
+    bottom: -3%;
+    left: 1%;
+}
+
+.dots{
+    margin-left: 92%;
+    margin-top: 35%;
+}
+
+.dots #black{
+    font-size: 28px;
+}
+
+.dot{
+    font-size: 22px;
+    margin-left: 5%;
+    color: #fbc50b;
+}
