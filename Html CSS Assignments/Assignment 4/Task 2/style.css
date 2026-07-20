@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 10% 27% 11% 10% 12% 15%;
+    grid-template-columns: 30% 15% 53%;
+    gap: 5px;
+    margin: 8px;
+    grid-template-areas: 
+    "nav-left nav-right nav-right"
+    "center-left1 center-left1 center-right"
+    "center-left2 center-left2 center-right"
+    "center-left3 center-left3 center-right"
+    "center-left4 center-left4 center-right"
+    "center-left5 center-left5 center-right"
+    "btm btm btm";
+}
+
+.nav-left{
+    background-color: aquamarine;
+    grid-area: nav-left;
+}
+.nav-right{
+    background-color:bisque;
+    grid-area: nav-right;
+}
+
+.center-left1{
+    background-color:darkcyan;
+    grid-area: center-left1;
+}
+.center-left2{
+    background-color:darkkhaki;
+    grid-area: center-left2;
+}
+.center-left3{
+    background-color:darkorange;
+    grid-area: center-left3;
+}
+.center-left4{
+    background-color:darkred;
+    grid-area: center-left4;
+}
+.center-left5{
+    background-color:dimgray;
+    grid-area: center-left5;
+}
+.center-right{
+    background-color: rgb(65, 107, 65);
+    grid-area: center-right;
+}
+
+.btm{
+    background-color:rgb(164, 142, 174);
+    grid-area: btm;
+}
