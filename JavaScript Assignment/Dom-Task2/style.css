@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0.1px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+    background: linear-gradient(
+    rgb(47, 46, 46),
+    rgb(29, 28, 28),
+    rgb(73, 72, 72),
+    rgb(31, 30, 30)
+  );
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-tag {
+  margin: 30px;
+  padding: 30px;
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#form-btn {
+  width: 30%;
+  height: 45px;
+  background-color: rgb(55, 55, 201);
+  border: 2px solid white;
+  color: whitesmoke;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
+.user-card {
+  margin-left: 35px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.user-card-details {
+  height: 48%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 15px;
+  /* position: relative; */
+}
+
+.user-card-details img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.user-btn {
+  display: flex;
+  justify-content: space-between;
+  /* position: absolute;
+  top: 10px;
+  right: 10px; */
+}
+
+#edit,
+#save {
+  width: 30%;
+  height: 30px;
+  background-color: rgb(34, 94, 72);
+  border: 2px solid white;
+  color: whitesmoke;
+  border-radius: 8px;
+}
+#del {
+  width: 30%;
+  height: 30px;
+  background-color: rgb(131, 19, 24);
+  border: 2px solid white;
+  color: whitesmoke;
+  border-radius: 8px;
+}
+
+h4,
+p,h2 {
+  color: whitesmoke;
+}
+
+.user-edit-form {
+  display: flex;
+}
+
+.user-input {
+  width: 75%;
+}
+.user-label {
+  color: whitesmoke;
+}
