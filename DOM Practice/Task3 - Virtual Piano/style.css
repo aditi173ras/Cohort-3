@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: -3%;
+}
+h1{
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  width: 50%;
+  height: 30%;
+  background-color: rgb(173, 173, 173);
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+  padding: 2px;
+}
+
+.piano {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+  display: flex;
+  gap: 2px;
+
+  border: 2px solid black;
+
+  position: relative;
+}
+
+.white-notes {
+  flex: 1;
+  height: 100%;
+
+  background: linear-gradient(to bottom, #fffef9, #f5f3eb, #dddcd5);
+
+  border: 1px solid black;
+
+  font-size: 24px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  padding-bottom: 10px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.08s ease,
+    background 0.08s ease,
+    box-shadow 0.08s ease;
+}
+
+.white-notes.active {
+  background: linear-gradient(to bottom, #e5e3dc, #d5d3cc, #c4c2bb);
+
+  transform: translateY(3px);
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.black-notes {
+  position: absolute;
+  width: 30px;
+  height: 65%;
+  color: white;
+  border: 1px solid black;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 10px;
+  background: linear-gradient(to bottom, #3a3a3a, #171717 45%, #050505 100%);
+
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.45),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+
+  cursor: pointer;
+
+  z-index: 2;
+
+  transition:
+    transform 0.08s ease,
+    background 0.08s ease,
+    box-shadow 0.08s ease;
+}
+
+.black-notes.active {
+  background: linear-gradient(to bottom, #252525, #101010, #000000);
+
+  transform: translateY(3px);
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.08);
+}
+
+#note-CMinor1 {
+  left: 7.5%;
+}
+
+#note-DMinor1 {
+  left: 17.5%;
+}
+
+#note-FMinor {
+  left: 37.5%;
+}
+
+#note-GMinor {
+  left: 48%;
+}
+
+#note-AMinor {
+  left: 58%;
+}
+
+#note-CMinor2 {
+  left: 78%;
+}
+
+#note-DMinor2 {
+  left: 88%;
+}
