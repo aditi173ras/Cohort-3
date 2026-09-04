@@ -106,6 +106,7 @@ main {
             width: auto;
             flex-grow: 1;
             background-size: cover;
+            background-position: center;
             transition: flex-grow 0.3s ease;
 
             &:hover {
@@ -130,6 +131,7 @@ main {
 
             &:nth-child(4) {
                 background-image: url("Images/Black widow_desktop.jpg");
+                background-position: 30%;
             }
 
             &:nth-child(5) {

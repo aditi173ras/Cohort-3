@@ -59,6 +59,7 @@ main section:nth-child(5) {
     width: auto;
     flex-grow: 1;
     background-size: cover;
+    background-position: center;
     transition: flex-grow 0.3s ease;
   }
   main section:hover {
@@ -79,6 +80,7 @@ main section:nth-child(5) {
   }
   main section:nth-child(4) {
     background-image: url("Images/Black widow_desktop.jpg");
+    background-position: 30%;
   }
   main section:nth-child(5) {
     background-image: url("Images/Ironman_desktop.jpg");
