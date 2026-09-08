@@ -1,0 +1,634 @@
+@font-face {
+  font-family: chillax;
+  src: url(Fonts/Chillax-Regular.woff);
+}
+@font-face {
+  font-family: satoshi;
+  src: url(Fonts/Satoshi-Light.woff);
+}
+@font-face {
+  font-family: roboto;
+  src: url(Fonts/RobotoMono.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .section1 {
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .section1 .top {
+  width: 100%;
+}
+main .section1 .top img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+main .section1 .bottom {
+  border-radius: 0.6rem;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #f4f2ed;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.8rem;
+}
+main .section1 .bottom > p {
+  font-family: roboto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .section1 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+main .section1 .bottom .text h1 {
+  width: 88%;
+  font-family: chillax;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section1 .bottom .text p {
+  color: rgba(244, 242, 237, 0.6);
+  font-family: satoshi;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+main .section1 .bottom .text .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+main .section1 .bottom .text .btn i {
+  background-color: #292929;
+  border: 1px solid rgba(244, 242, 237, 0.3058823529);
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+main .section1 .bottom .text .btn h4 {
+  font-family: roboto;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+main .section2 {
+  max-width: 2000px;
+  width: 100%;
+  color: #f4f2ed;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+main .section2 .top,
+main .section2 .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+  text-transform: uppercase;
+}
+main .section2 .top .sub-top,
+main .section2 .top .sub-bottom,
+main .section2 .bottom .sub-top,
+main .section2 .bottom .sub-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .section2 .top .sub-top h3,
+main .section2 .top .sub-bottom h3,
+main .section2 .bottom .sub-top h3,
+main .section2 .bottom .sub-bottom h3 {
+  color: rgba(244, 242, 237, 0.6);
+  font-size: 1.05rem;
+  font-family: roboto;
+  font-weight: 400;
+}
+main .section2 .top .sub-top h2,
+main .section2 .top .sub-bottom h2,
+main .section2 .bottom .sub-top h2,
+main .section2 .bottom .sub-bottom h2 {
+  font-size: 2.6rem;
+  font-family: chillax;
+  font-weight: 400;
+}
+main .section3 {
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .section3 .top {
+  width: 100%;
+}
+main .section3 .top img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+main .section3 .bottom {
+  border-radius: 0.6rem;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #f4f2ed;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+}
+main .section3 .bottom > p {
+  font-family: roboto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .section3 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+main .section3 .bottom .text h1 {
+  width: 88%;
+  font-family: chillax;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 300;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section3 .bottom .text p {
+  color: rgba(244, 242, 237, 0.6);
+  font-family: satoshi;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+}
+main .section4 {
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .section4 .top {
+  width: 100%;
+}
+main .section4 .top img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+main .section4 .bottom {
+  border-radius: 0.6rem;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #f4f2ed;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+}
+main .section4 .bottom > p {
+  font-family: roboto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .section4 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+main .section4 .bottom .text h1 {
+  width: 88%;
+  font-family: chillax;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 300;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section4 .bottom .text p {
+  color: rgba(244, 242, 237, 0.6);
+  font-family: satoshi;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+}
+main .section5 {
+  max-width: 2000px;
+  width: 100%;
+  padding: 1rem;
+}
+main .section5 h1 {
+  color: #f4f2ed;
+  font-family: chillax;
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0 1rem;
+}
+main .section6 {
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  padding: 1rem;
+}
+main .section6 .box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.4rem;
+  color: #ebe9e4;
+}
+main .section6 .box .logo {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 0.6rem;
+  padding: 1rem;
+}
+main .section6 .box .logo i {
+  font-size: 1.3rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: rgba(50, 47, 38, 0.8352941176);
+  color: rgba(235, 233, 228, 0.6431372549);
+}
+main .section6 .box .text {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  text-transform: uppercase;
+  background-color: rgba(77, 81, 78, 0.7529411765);
+  padding: 1.3rem 1rem;
+  border-radius: 0.4rem;
+  letter-spacing: 0.1rem;
+}
+main .section6 .box .text h2 {
+  font-family: chillax;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+main .section6 .box .text h4 {
+  font-family: roboto;
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .section6 .box:nth-child(1) {
+  width: 100%;
+  background-image: url("Images/hero4.webp");
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+main .section6 .box:nth-child(1) .text {
+  background-color: rgba(174, 162, 153, 0.6509803922);
+}
+main .section6 .box:nth-child(2) {
+  width: 100%;
+  background-image: url("Images/hero5.webp");
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+main .section6 .box:nth-child(3) {
+  width: 100%;
+  background-image: url("Images/hero6.webp");
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+main .section7 {
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .section7 .top {
+  width: 100%;
+}
+main .section7 .top img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+main .section7 .bottom {
+  border-radius: 0.6rem;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #f4f2ed;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section7 .bottom > p {
+  font-family: roboto;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgba(244, 242, 237, 0.6);
+}
+main .section7 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+main .section7 .bottom .text h1 {
+  font-family: chillax;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section7 .bottom .text .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+main .section7 .bottom .text .btn i {
+  background-color: #292929;
+  border: 1px solid rgba(244, 242, 237, 0.3058823529);
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+main .section7 .bottom .text .btn h4 {
+  font-family: roboto;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.1 rem;
+}
+main .section8 {
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .section8 .bottom {
+  color: #1a1a1a;
+  border-radius: 0.6rem;
+  width: 100%;
+  background-color: #cebd63;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main .section8 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section8 .bottom .text p {
+  font-family: roboto;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+main .section8 .bottom .text h1 {
+  font-family: chillax;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+  font-weight: 400;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section8 .bottom .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  gap: 0.7rem;
+  background-color: #161616;
+  color: #f4f2ed;
+  border-radius: 0.5rem;
+}
+main .section8 .bottom .btn h4 {
+  font-family: roboto;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem 0.5rem;
+}
+
+@media (min-width: 900px) {
+  main .section1 {
+    flex-direction: row;
+    border-radius: 2rem;
+  }
+  main .section1 .bottom,
+  main .section1 .top {
+    width: 50%;
+  }
+  main .section1 .bottom {
+    padding: 2.5rem 3.5rem;
+  }
+  main .section1 .bottom .text h1 {
+    font-size: 3.5rem;
+  }
+  main .section1 .bottom .text p {
+    font-weight: 500;
+    font-size: 1.15rem;
+  }
+  main .section1 .bottom .text .btn {
+    padding-top: 0.8rem;
+  }
+  main .section2 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 14rem;
+    padding: 3.3rem 0;
+  }
+  main .section2 .top,
+  main .section2 .bottom {
+    justify-content: center;
+    gap: 14rem;
+  }
+  main .section2 .top .sub-top h3,
+  main .section2 .top .sub-bottom h3,
+  main .section2 .bottom .sub-top h3,
+  main .section2 .bottom .sub-bottom h3 {
+    font-size: 1.05rem;
+  }
+  main .section2 .top .sub-top h2,
+  main .section2 .top .sub-bottom h2,
+  main .section2 .bottom .sub-top h2,
+  main .section2 .bottom .sub-bottom h2 {
+    font-size: 4rem;
+  }
+  main .section3 {
+    flex-direction: row-reverse;
+    border-radius: 2rem;
+  }
+  main .section3 .bottom,
+  main .section3 .top {
+    width: 50%;
+  }
+  main .section3 .bottom {
+    padding: 2.5rem 3.5rem;
+  }
+  main .section3 .bottom .text h1 {
+    width: 100%;
+    font-size: 2.9rem;
+  }
+  main .section3 .bottom .text p {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  main .section4 {
+    flex-direction: row;
+    border-radius: 2rem;
+  }
+  main .section4 .bottom,
+  main .section4 .top {
+    width: 50%;
+  }
+  main .section4 .bottom {
+    padding: 2.5rem 3.5rem;
+  }
+  main .section4 .bottom .text h1 {
+    width: 100%;
+    font-size: 3rem;
+  }
+  main .section4 .bottom .text p {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  main .section5 h1 {
+    font-size: 2.9rem;
+    padding: 0 3rem;
+  }
+  main .section6 {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+  }
+  main .section6 .box {
+    width: 30%;
+    padding: 1.4rem;
+  }
+  main .section6 .box .text {
+    justify-content: space-between;
+    padding: 1.3rem 1.5rem;
+  }
+  main .section6 .box .text h2 {
+    font-size: 1.4rem;
+  }
+  main .section6 .box .text h4 {
+    font-size: 1rem;
+  }
+  main .section7 {
+    flex-direction: row;
+    border-radius: 2rem;
+  }
+  main .section7 .bottom,
+  main .section7 .top {
+    width: 50%;
+  }
+  main .section7 .bottom {
+    padding: 2.5rem 3.5rem;
+  }
+  main .section7 .bottom .text {
+    gap: 12rem;
+  }
+  main .section7 .bottom .text h1 {
+    font-size: 3rem;
+  }
+  main .section7 .bottom .text p {
+    font-weight: 500;
+    font-size: 1.15rem;
+  }
+  main .section7 .bottom .text .btn {
+    padding-top: 0.8rem;
+  }
+  main .section8 {
+    flex-direction: row;
+    border-radius: 2rem;
+  }
+  main .section8 .bottom {
+    flex-direction: row;
+    padding: 2.5rem 3.5rem;
+    gap: 6rem;
+  }
+  main .section8 .bottom .text {
+    width: 90%;
+  }
+  main .section8 .bottom .text h1 {
+    font-size: 5rem;
+  }
+  main .section8 .bottom .text p {
+    font-weight: 500;
+    font-size: 1.15rem;
+  }
+  main .section8 .bottom .btn {
+    width: 18%;
+    padding: 0;
+    border-radius: 0.75rem;
+    align-self: flex-end;
+  }
+  main .section8 .bottom .btn h4 {
+    font-size: 1rem;
+    padding: 1rem 0rem;
+  }
+}/*# sourceMappingURL=style.css.map */
