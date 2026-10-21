@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #e8e6e6;
+  color: #222;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+}
+main .form-container {
+  display: none;
+  width: 410px;
+  padding: 20px 18px;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid #e0e0e0;
+  border-radius: 17px;
+  background-color: #fff;
+}
+main .form-container h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #222;
+}
+main .form-container form > label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+main .form-container form > input {
+  width: 100%;
+  height: 28px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  border-radius: 11px;
+  background-color: #f2f2f2;
+  color: #222;
+  padding: 0 11px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+main .form-container form > input::-moz-placeholder {
+  color: #999;
+}
+main .form-container form > input::placeholder {
+  color: #999;
+}
+main .form-container form > input:focus {
+  border-color: #999;
+}
+main .form-container form .category {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+main .form-container form .category label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  color: #555;
+}
+main .form-container form .category label input {
+  margin: 0;
+}
+main .form-container form button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+main .form-container form button[type=submit] {
+  background-color: #222;
+  margin-bottom: 9px;
+}
+main .form-container form button[type=button] {
+  background-color: #d62828;
+}
+main .note-container {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+}
+main .note-container .left-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .note-container .left-icons button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #a7a6a6;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #222;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main .note-container .left-icons button:hover {
+  background-color: #eaeaea;
+}
+main .stack {
+  position: relative;
+  z-index: 1;
+  width: 318px;
+  height: 240px;
+}
+main .stack .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid #3b3b3b;
+  border-radius: 20px;
+  color: black;
+}
+main .stack .card:nth-child(1) {
+  z-index: 3;
+}
+main .stack .card:nth-child(2) {
+  z-index: 2;
+  transform: translateY(10px) scale(0.98);
+  opacity: 0.9;
+}
+main .stack .card:nth-child(3) {
+  z-index: 1;
+  transform: translateY(20px) scale(0.96);
+  opacity: 0.7;
+}
+main .stack .card .profile {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+main .stack .card .profile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .stack .card h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+main .stack .card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+main .stack .card .details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 14px;
+  color: #222;
+}
+main .stack .card .details p span {
+  text-transform: capitalize;
+}
+main .stack .card .actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+main .stack .card .actions button {
+  border: none;
+  background: transparent;
+  color: #ddd;
+  font-size: 14px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+main .stack .card .actions button:first-child {
+  background: #000;
+  color: white;
+  border-radius: 30px;
+}
+main .stack .card .actions button i {
+  margin-right: 5px;
+}
+main .stack .card .actions .msgBtn {
+  color: black;
+}
+main .right-colors {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 2px;
+}
+main .right-colors span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+main .right-colors span:nth-child(1) {
+  background-color: #000;
+}
+main .right-colors span:nth-child(2) {
+  background-color: #31006b;
+}
+main .right-colors span:nth-child(3) {
+  background-color: #542400;
+}
+main .right-colors span:nth-child(4) {
+  background-color: #009d91;
+}/*# sourceMappingURL=style.css.map */

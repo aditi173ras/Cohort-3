@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <h2>New Call</h2>
+
+        <form>
+          <label>Image URL</label>
+          <input
+            required
+            type="text"
+            placeholder="https://example.com/photo.jpg"
+          />
+
+          <label>Full Name</label>
+          <input required type="text" placeholder="Enter full name" />
+
+          <label>Home Town</label>
+          <input required type="text" placeholder="Enter home town" />
+
+          <label>Purpose</label>
+          <input
+            required
+            type="text"
+            placeholder="e.g., Quick appointment note"
+          />
+
+          <label>Category</label>
+
+          <div class="category">
+            <label>
+              <input required type="radio" name="category" value="Emergency" />
+              Emergency
+            </label>
+
+            <label>
+              <input required type="radio" name="category" value="Important" />
+              Important
+            </label>
+
+            <label>
+              <input required type="radio" name="category" value="Urgent" />
+              Urgent
+            </label>
+
+            <label>
+              <input required type="radio" name="category" value="No Rush" />
+              No Rush
+            </label>
+          </div>
+
+          <button type="submit">Create Note</button>
+          <button id="closeBtn" type="button">Close</button>
+        </form>
+      </div>
+      <div class="note-container">
+        <div class="left-icons">
+          <button id="addBtn"><i class="ri-add-line"></i></button>
+          <button id="upBtn"><i class="ri-arrow-up-line"></i></button>
+          <button id="downBtn"><i class="ri-arrow-down-line"></i></button>
+        </div>
+      </div>
+      <div class="stack"></div>
+      <div class="right-colors">
+        <span data-category="Important"></span>
+        <span data-category="Emergency"></span>
+        <span data-category="Urgent"></span>
+        <span data-category="No Rush"></span>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
